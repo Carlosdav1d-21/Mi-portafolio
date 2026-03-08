@@ -1,0 +1,50 @@
+---
+import Terminal from './Terminal.tsx';
+---
+
+<section class="relative px-4 py-20 lg:py-32 overflow-hidden">
+  <div class="mx-auto max-w-7xl">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+
+      <!-- Texto -->
+      <div class="flex flex-col gap-8">
+
+        <!-- Badge disponible -->
+        <div class="inline-flex w-fit items-center gap-2 rounded-full bg-[#ffe600]/10 px-3 py-1 text-xs font-bold text-[#ffe600] ring-1 ring-inset ring-[#ffe600]/20">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffe600] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#ffe600]"></span>
+          </span>
+          Disponible para nuevas oportunidades
+        </div>
+
+        <!-- Título -->
+        <div class="flex flex-col gap-4">
+          <h1 class="text-5xl font-black leading-tight tracking-tight sm:text-7xl text-white">
+            Desarrollador Junior <span class="text-[#ffe600]">Creando Experiencias</span> Web Modernas
+          </h1>
+          <p class="max-w-xl text-lg text-slate-400">
+            Construyo aplicaciones escalables y centradas en el usuario con un enfoque en código limpio, rendimiento y diseño intuitivo.
+          </p>
+        </div>
+
+        <!-- Botones -->
+        <div class="flex flex-wrap gap-4">
+          <a class="inline-flex h-14 items-center justify-center rounded-xl bg-[#ffe600] px-8 text-base font-bold text-[#0a0a0a] shadow-lg shadow-[#ffe600]/20 hover:-translate-y-0.5 transition-all" href="#contact">
+            Trabaja conmigo
+          </a>
+          <a class="inline-flex h-14 items-center justify-center rounded-xl border border-[#ffe600]/20 bg-[#ffe600]/5 px-8 text-base font-bold text-[#ffe600] hover:bg-[#ffe600]/10 transition-all" href="#skills">
+            Ver habilidades
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Terminal animada -->
+      <div class="relative">
+        <Terminal client:load />
+      </div>
+
+    </div>
+  </div>
+</section>
