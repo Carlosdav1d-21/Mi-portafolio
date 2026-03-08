@@ -1,16 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import NavBar from '../components/NavBar.tsx';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import Skills from '../components/Skills.tsx';
-import Certifications from '../components/Certificaciones.tsx';
+import Certifications from '../components/Certifications.tsx';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Mi Portafolio">
-  <Header />
+  <NavBar client:load />
   <Hero />
   <About />
   <Skills client:load />
   <Certifications client:load />
+  <Contact />
+  <Footer />
 </Layout>
