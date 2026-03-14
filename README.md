@@ -1,43 +1,100 @@
-# Astro Starter Kit: Minimal
+# Mi Portafolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Portafolio personal desarrollado con Astro, React y Tailwind CSS. El sitio presenta una interfaz moderna con estilo tipo terminal, navegación interactiva y secciones para presentación, habilidades, certificaciones y contacto.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Caracteristicas
 
-## 🚀 Project Structure
+- Diseno responsivo para escritorio y moviles.
+- Navegacion flotante con desplazamiento suave entre secciones.
+- Hero principal con terminal animada.
+- Seccion de habilidades con modal interactivo.
+- Timeline de certificaciones.
+- Formulario visual de contacto.
+- Descarga de CV desde `public/cv.pdf`.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tecnologias
+
+- Astro 5
+- React 19
+- Tailwind CSS 4
+- TypeScript
+- Lucide React
+- Framer Motion
+
+## Estructura del proyecto
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+Mi-portafolio/
+|- public/
+|  |- cv.pdf
+|  |- favicon.ico
+|  `- favicon.svg
+|- src/
+|  |- components/
+|  |  |- About.astro
+|  |  |- Certifications.tsx
+|  |  |- Contact.astro
+|  |  |- Footer.astro
+|  |  |- Hero.astro
+|  |  |- NavBar.tsx
+|  |  |- Skills.tsx
+|  |  |- Terminal.tsx
+|  |  `- Timeline.tsx
+|  |- layouts/
+|  |  `- Layout.astro
+|  |- pages/
+|  |  `- index.astro
+|  `- styles/
+|     `- global.css
+|- astro.config.mjs
+`- package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Instalacion
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Scripts disponibles
 
-## 🧞 Commands
+```bash
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+Inicia el servidor local en `http://localhost:4321`.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```bash
+npm run build
+```
 
-## 👀 Want to learn more?
+Genera la version de produccion en `dist/`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+npm run preview
+```
+
+Previsualiza localmente la build de produccion.
+
+## Secciones del sitio
+
+- `Inicio`: presentacion principal y llamada a la accion.
+- `Sobre mi`: resumen profesional y datos personales.
+- `Habilidades`: stack tecnico con tarjetas interactivas.
+- `Certificaciones`: linea de tiempo con logros academicos.
+- `Contacto`: enlaces directos y formulario visual.
+
+## Personalizacion rapida
+
+- Edita el contenido principal en `src/components/`.
+- Ajusta estilos globales en `src/styles/global.css`.
+- Reemplaza el CV en `public/cv.pdf`.
+- Modifica metadatos basicos desde `src/layouts/Layout.astro`.
+
+## Autor
+
+Carlos David Galindo
+
+- LinkedIn: https://www.linkedin.com/in/carlos-galindo-gonzalez
+- GitHub: https://github.com/Carlosdav1d-21
+- Email: carlosdavid2234@gmail.com
