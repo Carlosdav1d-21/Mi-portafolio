@@ -84,13 +84,6 @@ Previsualiza localmente la build de produccion.
 - `Certificaciones`: linea de tiempo con logros academicos.
 - `Contacto`: enlaces directos y formulario visual.
 
-## Personalizacion rapida
-
-- Edita el contenido principal en `src/components/`.
-- Ajusta estilos globales en `src/styles/global.css`.
-- Reemplaza el CV en `public/cv.pdf`.
-- Modifica metadatos basicos desde `src/layouts/Layout.astro`.
-
 ## Autor
 
 Carlos David Galindo
